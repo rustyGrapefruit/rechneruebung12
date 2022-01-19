@@ -7,7 +7,7 @@ class House:
     rooms = 0
     price_qm = 0
 
-    def __init__(self, size=0, rooms=0, price_qm=0):
+    def __init__(self,size=0,rooms=0,price_qm=0):
         self.size = size
         self.rooms = rooms
         self.price_qm = price_qm
@@ -15,7 +15,7 @@ class House:
     def calcPrice(self):
         return self.price_qm*self.size
 
-    def setPrice(self, price):
+    def setPrice(self,price):
         self.price_qm = price/self.size
 
     def getDescription(self):
